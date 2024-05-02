@@ -1,145 +1,239 @@
+
 <!DOCTYPE HTML>
 <!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+    Massively by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Destination event planning</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		
-	</head>
-	<body class="is-preload">
+    <head>
+        <title>Destination event planning</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <style>
+            /* Paste the CSS styles here */
+            .animated-button {
+                position: relative;
+                display: flex;
+                align-items: center;
+                gap: 4px;
+                padding: 16px 36px;
+                border: 4px solid;
+                border-color: transparent;
+                font-size: 16px;
+                background-color: transparent;
+                border-radius: 100px;
+                font-weight: 600;
+                color: #1f387e;
+                box-shadow: 0 0 0 2px #ffffff;
+                cursor: pointer;
+                overflow: hidden;
+                transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+            }
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+            .animated-button svg {
+                position: absolute;
+                width: 24px;
+                fill: #1f387e;
+                z-index: 9;
+                transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+            }
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Destination event planning</h1>
-						
-						<p>Welcome to Destination Event Planning, your gateway to exceptional experiences around the globe</p>
-						<ul class="actions">
-							
-						</ul>
-					</div>
+            .animated-button .arr-1 {
+                right: 16px;
+            }
 
-				<!-- Header -->
-					<header id="header">
-						<button class="animated-button">
-  <svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
-    <path
-      d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-    ></path>
-  </svg>
-  <span class="text">E N T R Y</span>
-  <span class="circle"></span>
-  <svg xmlns="http://www.w3.org/2000/svg" class="arr-1" viewBox="0 0 24 24">
-    <path
-      d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-    ></path>
-  </svg>
-</button>
+            .animated-button .arr-2 {
+                left: -25%;
+            }
 
-					</header>
+            .animated-button .circle {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 20px;
+                height: 20px;
+                background-color: #c5e5e4;
+                border-radius: 50%;
+                opacity: 0;
+                transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+            }
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Destination Event planning</a></li>
-							<li><a href="generic.html">About Us</a></li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							
-						</ul>
-					</nav>
+            .animated-button .text {
+                position: relative;
+                z-index: 1;
+                transform: translateX(-12px);
+                transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+            }
 
-				<!-- Main -->
-					<div id="main">
+            .animated-button:hover {
+                box-shadow: 0 0 0 12px transparent;
+                color: #212121;
+                border-radius: 12px;
+            }
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<h2><a href="#">Simajesty Ventures</a></h2>
-								</header>
-								<a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
-							</article>
+            .animated-button:hover .arr-1 {
+                right: -25%;
+            }
 
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<h2><a href="#">Weddings</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-								</article>
-								<article>
-									<header>
-										<h2><a href="#">Birthdays</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-								</article>
-								<article>
-									<header>
-										<h2><a href="#">Conference</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-								</article>
-								<article>
-									<header>
-										<h2><a href="#">Product launch</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-								</article>
-								<article>
-									<header>
-										<h2><a href="#">Concerts</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-								</article>
-								<article>
-									<header>
-										<h2><a href="#">Festivals</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-								</article>
-							</section>
+            .animated-button:hover .arr-2 {
+                left: 16px;
+            }
 
-						<!-- Footer -->
-							
+            .animated-button:hover .text {
+                transform: translateX(12px);
+            }
 
-					</div>
+            .animated-button:hover svg {
+                fill: #1f387e;
+            }
 
-				<!-- Footer -->
-					<footer id="footer">
-						
-					</footer>
+            .animated-button:active {
+                scale: 0.95;
+                box-shadow: 0 0 0 4px greenyellow;
+            }
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5u">HTML5 UP desmond</a></li></ul>
-					</div>
+            .animated-button:hover .circle {
+                width: 220px;
+                height: 220px;
+                opacity: 1;
+            }
+        </style>
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        
+    </head>
+    <body class="is-preload">
 
-			</div>
+        <!-- Wrapper -->
+            <div id="wrapper" class="fade-in">
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script>
-				
-			</script>
+                <!-- Intro -->
+                    <div id="intro">
+                        <h1>Destination event planning</h1>
+                        
+                        <p>Welcome to Destination Event Planning, your gateway to exceptional experiences around the globe</p>
+                        <ul class="actions">
+                            
+                        </ul>
+                    </div>
 
-	</body>
+                <!-- Header -->
+                    <header id="header">
+                        <button class="animated-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
+                                <path
+                                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                                ></path>
+                            </svg>
+                            <span class="text">E N T R Y</span>
+                            <span class="circle"></span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="arr-1" viewBox="0 0 24 24">
+                                <path
+                                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                                ></path>
+                            </svg>
+                        </button>
+                    </header>
+
+                <!-- Nav -->
+                    <nav id="nav">
+                        <ul class="links">
+                            <li class="active"><a href="index.html">Destination Event planning</a></li>
+                            <li><a href="generic.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                        <ul class="icons">
+                            <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                            <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                            
+                        </ul>
+                    </nav>
+
+                <!-- Main -->
+                    <div id="main">
+
+                        <!-- Featured Post -->
+                            <article class="post featured">
+                                <header class="major">
+                                    <h2><a href="#">Simajesty Ventures</a></h2>
+                                </header>
+                                <a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
+                            </article>
+
+                        <!-- Posts -->
+                            <section class="posts">
+                                <article>
+                                    <header>
+                                        <h2><a href="#">Weddings</a></h2>
+                                    </header>
+                                    <a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+                                </article>
+                                <article>
+                                    <header>
+                                        <h2><a href="#">Birthdays</a></h2>
+                                    </header>
+                                    <a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
+                                </article>
+                                <article>
+                                    <header>
+                                        <h2><a href="#">Conference</a></h2>
+                                    </header>
+
+
+                                    <a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
+                                </article>
+                                <article>
+                                    <header>
+                                        <h2><a href="#">Product launch</a></h2>
+                                    </header>
+                                    <a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
+                                </article>
+                                <article>
+                                    <header>
+                                        <h2><a href="#">Concerts</a></h2>
+                                    </header>
+                                    <a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+                                </article>
+                                <article>
+                                    <header>
+                                        <h2><a href="#">Festivals</a></h2>
+                                    </header>
+                                    <a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+                                </article>
+                            </section>
+
+                        <!-- Footer -->
+                            
+
+                    </div>
+
+                <!-- Footer -->
+                    <footer id="footer">
+                        
+                    </footer>
+
+                <!-- Copyright -->
+                    <div id="copyright">
+                        <ul><li>&copy; Untitled</li><li>Design: <a href="https://html5u">HTML5 UP desmond</a></li></ul>
+                    </div>
+
+            </div>
+
+        <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.scrollex.min.js"></script>
+            <script src="assets/js/jquery.scrolly.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+            <script>
+                
+            </script>
+
+    </body>
 </html>
+```
+
+Just copy and paste this code into your HTML file, and it will include the CSS styles for the animated button within the `<style>` tag in the `<head>` section.
